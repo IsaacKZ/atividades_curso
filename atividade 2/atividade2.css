@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+}
+
+.item {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+img {
+    cursor: pointer;
+    width: 75%;
+}
