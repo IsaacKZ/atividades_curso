@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>O que eu mais gosto em Joinville</title>
+</head>
+<body>
+
+    <div class="container-modelo">
+        
+        <div class="header-banner">
+            <h1>O que eu mais gosto em Joinville</h1>
+        </div>
+
+        <div class="grid-layout">
+            
+            <div class="left-column">
+                
+                <div class="bloco" style="margin-bottom: 20px;">
+                    <h3>Passear em Joinville</h3>
+                    <div class="flex-content">
+                        <img src="assets/mirante.jpg" alt="Passeio Joinville">
+                        <p>
+                            Joinville é um município localizado na região norte do estado de Santa Catarina. 
+                            Com 562.151 habitantes é a <i>maior</i> cidade do estado, à frente da capital Florianópolis, 
+                            e é a terceira maior cidade da Região Sul do Brasil atrás apenas de Porto Alegre e 
+                            Curitiba (da qual é distante apenas 130 quilômetros, sendo assim, mais próxima da 
+                            capital paranaense do que a do próprio estado).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloco">
+                    <h3>Lazer em Joinville</h3>
+                    <div class="flex-content">
+                        <img src="assets/estradabonita.jpg" alt="Lazer em Joinville">
+                        <p>
+                            Tem passeios que joinvilense conhece bem, como o tradicional Zoobotânico, museus e rua 
+                            das Palmeiras. Tem lugares mais escondidos, mas de mesmo charme, como floriculturas e 
+                            brechós. Na rua Visconde de Taunay existem várias opções de gastronomia. Você ainda 
+                            pode passear com o barco príncipe de Joinville. E ainda existem muito mais opções...
+                            <br><br>
+                            Vale a pena conferir.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right-column">
+                
+                <div class="bloco" style="background-color: white; border: 1px solid #ccc; margin-bottom: 20px;">
+                    <p><strong>E existem muitos outros lugares interessantes na cidade...</strong></p>
+                    <ul class="lista-lugares">
+                        <li>1. O Mercado Municipal.</li>
+                        <li>2. O estádio da Arena Joinville. </li>
+                        <li>3. Parque Zoobotânico.</li>
+                        <li>4. Parque France. </li>
+                        <li>5. Parque da Expoville. </li>
+                        <li>6. Iate Clube. </li>
+                        <li>7. Opa Bier.</li>
+                        <li>8. E mais!</li>
+                    </ul>
+                </div>
+
+                <div class="bloco">
+                    <h3>Parque da Expoville</h3>
+                    <img src="assets/Parquefrance.jpg" alt="Parque Expoville" style="width: 100%; margin-top: 10px; border: 1px solid #999;">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #a8ccd7; 
+    margin: 0;
+    padding: 20px;
+}
+.container-modelo {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header-banner {
+    background-color: #e0f2f7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8eb4c1;
+}
+
+.header-banner h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.bloco {
+    background-color: #e0f2f7;
+    padding: 15px;
+    height: 100%;
+}
+
+.bloco h3 {
+    margin-top: 0;
+    border-bottom: 1px dashed #666;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.flex-content {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.flex-content img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.flex-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.lista-lugares {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.lista-lugares li {
+    margin-bottom: 5px;
+}
+</style>
+</html>
