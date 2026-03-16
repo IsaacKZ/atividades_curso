@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop 5 Estrelas - Quem Somos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      background: #fff;
+      color: #222;
+    }
+
+    /* ── NAV ── */
+    #nav {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 0;
+    }
+
+    #nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    #nav ul li a {
+      display: block;
+      padding: 7px 14px;
+      color: #333;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    #nav ul li a:hover {
+      color: #e07020;
+    }
+
+    #nav ul li.active a {
+      background: #e07020;
+      color: white;
+      border-radius: 3px;
+    }
+
+    /* ── WRAPPER ── */
+    #wrapper {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    /* ── PAGE TITLE ── */
+    h1 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    /* ── TEXTO ── */
+    .description {
+      font-size: 12.5px;
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    .photo-credit {
+      font-size: 11px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* ── SLIDER AREA ── */
+    .slider {
+      width: 100%;
+      position: relative;
+      background: #e8f0f8;
+      border: 1px solid #ccc;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .slider-img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #d0e8f5, #b0d5ea);
+      color: #aaa;
+      font-size: 50px;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.7);
+      border: 1px solid #bbb;
+      color: #555;
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 3px;
+      user-select: none;
+    }
+
+    .slider-btn:hover {
+      background: rgba(255,255,255,0.95);
+    }
+
+    .btn-left  { left: 6px; }
+    .btn-right { right: 6px; }
+  </style>
+</head>
+<body>
+
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li class="active"><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="#">Nossos Serviços</a></li>
+      <li><a href="#">Nossos Produtos</a></li>
+    </ul>
+  </div>
+
+  <div id="wrapper">
+
+    <h1>Pet Shop 5 Estrelas</h1>
+
+    <p class="description">
+      O Pet Shop 5 estrelas foi criado em junho de 2005. Desde então, o desafio da equipe do 5 estrelas tem sido trazer mais qualidade e atualização na área veterinária e de pet. Isso vem sendo conseguido através de treinamento de seus funcionários, inclusive em cursos fora da cidade e aquisição de maquinários mais modernos. Temos uma medica veterinária, que é especialista em clínica e cirurgia com mestrado em cirurgia.
+    </p>
+
+    <p class="photo-credit">www.fotos.fot.br</p>
+
+    <div class="slider">
+      <div class="slider-btn btn-left">&#8249;</div>
+      <div class="slider-img">🐱🐶</div>
+      <div class="slider-btn btn-right">&#8250;</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

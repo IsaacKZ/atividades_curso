@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>CFB Turismo</title>
+<head>
+<body>
+
+  <!-- header -->
+  <header class="top">
+    <div class="wrap">
+      <div class="logo"><span class="blue">CFB</span> <span class="yellow">Turismo</span></div>
+      <div class="social">Facebook | Twitter</div>
+    </div>
+  </header>
+
+  <!-- nav -->
+  <nav class="menu">
+    <div class="wrap">
+      <a href="#">Home</a>
+      <a href="#">Destinos</a>
+      <a href="#">Promoções</a>
+      <a href="#">Contato</a>
+    </div>
+  </nav>
+
+  <!-- small icons gallery -->
+  <div class="icons">
+    <ul>
+      <li><img src="https://via.placeholder.com/28" alt=""></li>
+      <li><img src="https://via.placeholder.com/28" alt=""></li>
+      <li><img src="https://via.placeholder.com/28" alt=""></li>
+      <li><img src="https://via.placeholder.com/28" alt=""></li>
+    </ul>
+  </div>
+
+  <!-- main area -->
+  <main class="wrap content-area">
+    <section class="main">
+      <h1>Viaje bem viaje CFB Turismo</h1>
+
+      <p>Pensou em viajar? Então consulte nossos pacotes nacionais e internacionais, consulte também nossas opções de cruzeiros.</p>
+
+      <p>Compre pelo telefone sem sair de casa, basta se cadastrar em uma de nossas lojas apenas uma vez e comprar pelo telefone quantas vezes quiser.</p>
+
+      <p>Então você já sabe, pensou em viajar? Pensou CFB Turismo.</p>
+
+      <h2>Contate-nos</h2>
+      <p>Tire todas suas dúvidas, consulte-nos sobre nossos pacotes. Clique no menu contato e estaremos prontos para atendê-lo.</p>
+    </section>
+
+    <aside class="side">
+      <h3>Telefones</h3>
+      <p>(11)1111-1111</p>
+      <p>(11)2222-2222</p>
+
+      <h3>E-mail</h3>
+      <p>comercial@cfbturismo.com.br</p>
+      <p>sac@cfbturismo.com.br</p>
+    </aside>
+  </main>
+
+</body>
+
+<style>
+/* reset mínimo */
+*{box-sizing:border-box}
+
+/* pagina */
+body{
+  margin:0;
+  font-family: "Arial", sans-serif;
+  background:#e9e9e9;
+  color:#222;
+}
+
+/* wrapper central com largura fixa */
+.wrap{
+  max-width:980px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* topo: menor altura como na imagem */
+.top{
+  background:#fafafa;
+  border-bottom:1px solid #ddd;
+}
+.top .wrap{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:62px; /* header baixo */
+}
+.logo{font-size:28px; font-weight:700;}
+.logo .blue{color:#1e88e5}
+.logo .yellow{color:#f4b400}
+
+/* social à direita */
+.social{font-size:14px; color:#111;}
+
+/* menu cinza estreito */
+.menu{background:#999;}
+.menu .wrap{display:flex; justify-content:center; align-items:center; height:40px;}
+.menu a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 22px;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* ícones pequenos centralizados (entre nav e conteúdo) */
+.icons{padding:18px 0 6px 0}
+.icons ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:12px;
+  justify-content:center;
+}
+.icons img{
+  width:28px;
+  height:28px;
+  display:block;
+  border-radius:3px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.18);
+}
+
+/* content area: boxes lado a lado */
+.content-area{
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+  padding:22px 0 80px 0;
+}
+
+/* parte principal */
+.main{
+  flex:0 0 65%;
+  background:#fff;
+  padding:26px;
+  border-radius:8px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.06);
+}
+.main h1{margin-top:0; font-size:20px; color:#333}
+.main h2{font-size:18px; margin-top:18px}
+
+/* sidebar */
+.side{
+  flex:0 0 30%;
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.06);
+}
+.side h3{margin-top:0; font-size:16px}
+
+/* texto */
+p{line-height:1.6; color:#333; font-size:14px}
+
+/* responsividade básica */
+@media (max-width:900px){
+  .content-area{flex-direction:column;}
+  .main,.side{flex:1}
+  .menu .wrap{flex-wrap:wrap; gap:10px}
+}
+</style>
+
+</html>
