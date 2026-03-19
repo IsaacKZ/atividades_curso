@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Pizza</title>
+</head>
+<body>
+
+  <h1>Crie sua Conta do Hello Pizza</h1>
+
+  <form>
+
+    <fieldset>
+      <legend>Conta</legend>
+      Conta: <input type="text" id="conta"><br><br>
+      Email: <input type="email" id="email"><br><br>
+      Senha: <input type="password" id="senha">
+    </fieldset>
+
+    <fieldset>
+      <legend>Pessoal</legend>
+      Nome: <input type="text" id="nome" placeholder="Ex: Bruno"><br><br>
+      Telefone: <input type="tel" id="telefone" placeholder="Ex: (99) 99999-9999"><br><br>
+      Sexo:
+      <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label>
+      <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label><br><br>
+      Data de nascimento: <input type="date" id="nascimento"><br><br>
+      Foto de perfil: <input type="file" id="foto">
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+      Rua: <input type="text" id="rua"><br><br>
+      Numero: <input type="number" id="numero" value="0"><br><br>
+      Complemento: <input type="text" id="complemento"><br><br>
+      Cidade: <input type="text" id="cidade"><br><br>
+      Estado:
+      <select id="estado">
+        <option>Santa Catarina</option>
+        <option>São Paulo</option>
+        <option>Paraná</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Anuncio</legend>
+      <textarea placeholder="Conte a sua historia e diga para a gente como conheceu a melhor pizzaria do brasil"></textarea><br><br>
+      Como conheceu o HelloPizza: <input type="text" id="como"><br><br>
+      <input type="checkbox" id="ofertas" checked>
+      <label for="ofertas">Desejo receber ofertas por e-mail</label>
+    </fieldset>
+
+    <br>
+    <button type="submit">Finalizar cadastro</button>
+
+  </form>
+
+</body>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  h1 {
+    color: darkred;
+  }
+
+  fieldset {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  input, select, textarea {
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 300px;
+    height: 80px;
+  }
+
+  button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+
+</html>
