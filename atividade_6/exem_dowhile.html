@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Do While</title>
+</head>
+<body>
+    <h1> Atividade - Do While </h1>
+    <script>
+        let contador = 1
+        let contpares = 0
+        let contimpares = 0
+        do {
+            let numero = parseInt(prompt('Informe um número'))
+            if (numero % 2 == 0) {
+                contpares++
+            } else {
+                contimpares++
+            }
+        } while (contador <= 10)
+        document.write('Quantidade de números pares: ' + contpares)
+        document.write('Quantidade de números impares: ' + contimpares)
+    </script>
+</body>
+</html>
