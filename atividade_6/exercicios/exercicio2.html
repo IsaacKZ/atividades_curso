@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1> Sistema de login</h1>
+    <script>
+        let nome = prompt("Informe seu nome")
+        let senha = prompt("Informe sua senha")
+        let idade = parseInt(prompt("Informe sua idade"))
+
+        if (nome == "admin" && senha == 1234){
+            document.write("Acesso permitido como administrador")
+        } else if (nome == "visitante" || idade >= 18){
+            document.write("Acesso permitido como usuário comum!")
+        } else {
+            document.write("Acesso negado!")
+        }
+    </script>
+</body>
+</html>

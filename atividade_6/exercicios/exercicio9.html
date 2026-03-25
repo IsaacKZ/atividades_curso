@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metade números</title>
+</head>
+<body>
+    <h1> Metade dos 10 números escolhidos</h1>
+    <script>
+        let contpares = 0;
+        let contimpares = 0;
+        let maior_dez = 0;
+        for (let x = 1; x <= 10; x++) {
+            let numero = parseInt(prompt("Escolha um número"), 10);
+
+            if (numero > 10) {
+                maior_dez++;
+            }
+
+            if (numero % 2 == 0) {
+                contpares++;
+            }
+
+            else {
+                contimpares++;
+            }
+        }
+
+        document.write("Qt de números pares: " + contpares + "<br>");
+        document.write("Qt de números ímpares: " + contimpares + "<br>");
+        document.write("Qt de números maiores que dez: " + maior_dez);
+    </script>
+</body>
+</html>
