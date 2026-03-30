@@ -1,0 +1,11 @@
+.onclick, .doubleclick {
+    display: flex;
+    height: 75px;
+    width: 75px;
+    padding: 10px 20px;
+}
+
+.caixa {
+    height: 100px;
+    width: 100px;
+}

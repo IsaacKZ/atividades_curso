@@ -10,7 +10,7 @@ document.getElementById("botao01").ondblclick = function() {
 
 // onKeyPress
 document.getElementById("keypress").onkeypress = function() {
-    alert("Tecla pressionada! (onKeyPress)");
+    alert("Tecla pressionada (algumas não contam)! (onKeyPress)");
 }
 
 // onKeyDown

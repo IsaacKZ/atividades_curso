@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado Civil</title>
+</head>
+<body>
+  <h1>Estado civil das pessoas</h1>
+  <script>
+    let solteiras = 0;
+    let casadas = 0;
+    let divorciadas = 0;
+    let viuvas = 0;
+
+    let continuar = "S";
+
+    while (continuar != "N" && continuar != "n") {
+      prompt("Nome da pessoa:");
+      let estadoNum = parseInt(
+        prompt(
+          "Escolha o estado civil:\n1 - divorciado\n2 - viúvo\n3 - solteiro\n4 - casado"
+        ),
+        10
+      );
+
+      if (estadoNum == 1) {
+        divorciadas++;
+      } else if (estadoNum == 2) {
+        viuvas++;
+      } else if (estadoNum == 3) {
+        solteiras++;
+      } else if (estadoNum == 4) {
+        casadas++;
+      } else {
+        alert("Opção inválida. Escolha 1, 2, 3 ou 4.");
+      }
+
+      continuar = prompt("Deseja continuar? (S para sim / N para não)");
+    }
+
+    document.write("Quantas pessoas são solteiras: " + solteiras + "<br>");
+    document.write("Quantas pessoas são casadas: " + casadas + "<br>");
+    document.write("Quantas pessoas são divorciadas: " + divorciadas + "<br>");
+    document.write("Quantas pessoas são viúvas: " + viuvas);
+  </script>
+</body>
+</html>
