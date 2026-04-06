@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <h1> Contador </h1>
+
+    <script>
+        let inicio = parseInt(prompt("Escolha um número para iniciar a contagem!"))
+        let fim = parseInt(prompt("Escolha um número para finalizar a contagem!"))
+        let contador = inicio
+
+        if (inicio > fim) {
+            alert("Inicio não pode ser maior que fim!")
+        } 
+
+        else {
+        while (contador != fim + 1) {
+            document.writeln(contador + "<br>")
+            contador++
+        }
+    }
+    </script>
+</body>
+</html>
