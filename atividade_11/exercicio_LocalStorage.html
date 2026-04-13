@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+</head>
+<body>
+ 
+  <h1>Lista de Tarefas</h1>
+ 
+  <input type="text" id="inputTarefa" placeholder="Digite uma tarefa...">
+ 
+  <br><br>
+ 
+  <button onclick="adicionar()">Adicionar</button>
+  <button onclick="renderizar()">Listar</button>
+  <button onclick="limparTudo()">Limpar Tudo</button>
+ 
+  <ul id="listaTarefas"></ul>
+ 
+  <script>
+    function carregarTarefas() {
+    const dados = localStorage.getItem("tarefas");
+    if (dados) {
+        return JSON.parse(dados);
+}   else {
+        return [];
+}
+    }
+ 
+    function salvarTarefas(tarefas) {
+      localStorage.setItem("tarefas", JSON.stringify(tarefas));
+    }
+ 
+    function renderizar() {
+      const tarefas = carregarTarefas();
+      const lista = document.querySelector("#listaTarefas");
+ 
+      lista.innerHTML = "";
+ 
+      tarefas.forEach(function(tarefa, indice) {
+        const item = document.createElement("li");
+        item.textContent = tarefa;
+ 
+        const botaoRemover = document.createElement("button");
+        botaoRemover.textContent = "Remover";
+        botaoRemover.onclick = function() {
+          remover(indice);
+        };
+ 
+        item.appendChild(botaoRemover);
+        lista.appendChild(item);
+      });
+    }
+ 
+    function adicionar() {
+      const input = document.querySelector("#inputTarefa");
+      const texto = input.value.trim();
+ 
+      if (texto === "") return;
+ 
+      const tarefas = carregarTarefas();
+      tarefas.push(texto);
+      salvarTarefas(tarefas);
+ 
+      input.value = "";
+    }
+ 
+    function remover(indice) {
+      const tarefas = carregarTarefas();
+      tarefas.splice(indice, 1);
+      salvarTarefas(tarefas);
+      renderizar();
+    }
+ 
+    function limparTudo() {
+      localStorage.removeItem("tarefas");
+      renderizar();
+    }
+  </script>
+ 
+</body>
+</html>
+ 
