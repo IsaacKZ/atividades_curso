@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome">
+    <button onclick="salvar_nome()"> Salvar </button>
+    <p id="resultado"></p>
+    <script>
+        // Armazenar dados no localStorage
+        function salvar_nome() {
+        let nome = document.getElementById("nome", nome).value;
+        localStorage.setItem("nome", nome);
+        }
+        
+        // Mostrar dados
+        function mostrar() {
+            let nome = localStorage.getItem("nome");
+            document.getElementById("resultado").innerText = nome;
+        }
+    </script>
+</body>
+</html>
