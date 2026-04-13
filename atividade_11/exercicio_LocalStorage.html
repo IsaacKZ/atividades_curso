@@ -24,7 +24,7 @@
     if (dados) {
         return JSON.parse(dados);
 }   else {
-        return [];
+        return []; // retorna vazio
 }
     }
  
@@ -36,26 +36,26 @@
       const tarefas = carregarTarefas();
       const lista = document.querySelector("#listaTarefas");
  
-      lista.innerHTML = "";
+    lista.innerHTML = "";
  
-      tarefas.forEach(function(tarefa, indice) {
+    tarefas.forEach(function(tarefa, indice) { // percorre todos os valores
         const item = document.createElement("li");
-        item.textContent = tarefa;
+        item.innerHTML = tarefa;
  
         const botaoRemover = document.createElement("button");
         botaoRemover.textContent = "Remover";
         botaoRemover.onclick = function() {
-          remover(indice);
+        remover(indice);
         };
  
-        item.appendChild(botaoRemover);
-        lista.appendChild(item);
+        item.appendChild(botaoRemover); // adiciona o botão dentro do <li>
+        lista.appendChild(item); // adiciona o <li> dentro do <ul>
       });
     }
  
     function adicionar() {
       const input = document.querySelector("#inputTarefa");
-      const texto = input.value.trim();
+      const texto = input.value.trim(); // .trim é basicamente o .strip do python
  
       if (texto === "") return;
  
