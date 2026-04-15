@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio aleatório</title>
+</head>
+<body>
+    <h1> Seu cardápio de hoje:</h1>
+    <script>
+        const paes = ["3 graos", "integral", "fatia"]
+        const carnes = ["picanha", "alcatra", "sobras de ontem"]
+        const queijos = ["4 queijos", "5 queijos", "mussarela"]
+        const bebidas = ["coca-cola", "sprite", "agua"]
+
+        const pao_pos = Math.floor(Math.random() * 3)
+        const carne_pos = Math.floor(Math.random() * 3)
+        const queijo_pos = Math.floor(Math.random() * 3)
+        const bebida_pos = Math.floor(Math.random() * 3)
+        
+        document.writeln("Seu combo de hoje é: <br>")
+        document.writeln("pão: " + paes[pao_pos] + "<br>" + "carne: " + carnes[carne_pos] + 
+        "<br>" + "queijo: " + queijos[queijo_pos] + "<br>" + "bebida: " + bebidas[bebida_pos])
+
+    </script>
+</body>
+</html>

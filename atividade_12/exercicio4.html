@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagem</title>
+</head>
+<body>
+    <h1> Seu personagem aleatório</h1>
+    <script>
+        const nomes = ["O grandioso", "O burro de carga", "O secundário"]
+        const armas = ["Mouse e teclado", "Cocô de animais", "Cajado da onipotência"]
+        const poderes = ["Conseguir dar pulo duplo quando peida", "Onisciência", "Falar 15% mais alto que um humano normal"]
+        const idades = ["15", "30", "999+"]
+
+        const nome_pos = Math.floor(Math.random() * 3)
+        const arma_pos = Math.floor(Math.random() * 3)
+        const poder_pos = Math.floor(Math.random() * 3)
+        const idade_pos = Math.floor(Math.random() * 3)
+        
+        document.writeln("Seu combo de personagem é: <br>")
+        document.writeln("Nome: " + nomes[nome_pos] + "<br>" + "Arma: " + armas[arma_pos] + 
+        "<br>" + "Poder: " + poderes[poder_pos] + "<br>" + "Idade: " + idades[idade_pos])
+
+    </script>
+</body>
+</html>

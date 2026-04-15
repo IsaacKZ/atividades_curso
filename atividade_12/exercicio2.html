@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipes</title>
+</head>
+<body>
+    <h1> Equipes abaixo: </h1>
+    <script>
+
+        let equipe1 = []
+        let equipe2 = []
+        const nomes = ["pessoa 1 ", "pessoa 2 ", "pessoa 3 ", "pessoa 4 ", "pessoa 5 ",
+                       "pessoa 6 ", "pessoa 7 ", "pessoa 8 ", "pessoa 9 ", "pessoa 10 ", ]
+
+        nomes.forEach(function(pos) {
+            let aleatorio = Math.floor(Math.random() * 2 + 1)
+            if (aleatorio == 1 && equipe1.length < 5) {
+                equipe1.push(pos)
+            }
+            else if (aleatorio == 2 && equipe2.length < 5) {
+                equipe2.push(pos)
+            }
+
+            else if (equipe1.length < 5) {
+                equipe1.push(pos)
+            }
+
+            else if (equipe2.length < 5) {
+                equipe2.push(pos)
+            }
+
+            console.log(equipe1, equipe2)
+        })
+
+        document.writeln("equipe 1: " + equipe1);
+        document.writeln("<br>")
+        document.writeln("equipe 2: " + equipe2);
+        //console.log("Senha gerada:", senha)
+    </script>
+</body>
+</html>
