@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="POST" action="">
+        <label>Digite seu nome:</label>
+        <input type="text" name="nome">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nome'])) {
+        $nome = htmlspecialchars($_POST['nome']);
+    }
+    echo 'Olá, ' . $nome;
+    ?>
+    
+</body>
+</html>
