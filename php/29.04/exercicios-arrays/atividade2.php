@@ -50,7 +50,7 @@ switch ($numMes) {
         echo "Dezembro";
         break;
 
-    default:
+    default: // fora do index válido
         echo "Mês inválido";
 }
 ?>
